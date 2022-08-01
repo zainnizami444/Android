@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "58148269361",
+    "firebase_url": "https://insertupdatedeletepractice-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "insertupdatedeletepractice",
+    "storage_bucket": "insertupdatedeletepractice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58148269361:android:e3b9c10f54a1a40ab71410",
+        "android_client_info": {
+          "package_name": "com.example.insertupdatedeletework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58148269361-fdg6rbib138diubb9lq5on8e5r491hv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4JKpNoHqWBcCuBVjmVaM6D-6WdwUAcKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58148269361-fdg6rbib138diubb9lq5on8e5r491hv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
