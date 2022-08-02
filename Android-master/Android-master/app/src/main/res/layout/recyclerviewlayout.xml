@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+    android:background="@color/teal_200"
+             android:layout_height="match_parent">
+
+ <TextView
+     android:id="@+id/rid"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+
+    />
+ <TextView
+     android:id="@+id/rfname"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="50dp"
+  />
+
+ <TextView
+     android:id="@+id/rlname"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="100dp"
+      />
+
+ <TextView
+     android:id="@+id/rcontact"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="150dp"
+ />
+
+ <TextView
+     android:id="@+id/rpass"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="200dp"
+      />
+</androidx.cardview.widget.CardView>
