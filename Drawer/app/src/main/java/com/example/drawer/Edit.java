@@ -1,6 +1,8 @@
 package com.example.drawer;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -35,6 +37,7 @@ public class Edit extends AppCompatActivity {
         String id = intent.getStringExtra("uid");
         up_fname.setText(intent.getStringExtra("fname"));
         up_lname.setText(intent.getStringExtra("lname"));
+        up_contact.setText(intent.getStringExtra("contact"));
         up_email.setText(intent.getStringExtra("email"));
 
         up_contact.setText(intent.getStringExtra("contact"));
@@ -46,8 +49,7 @@ public class Edit extends AppCompatActivity {
                 @Override
                 public void onSuccess(Void unused) {
                     Toast.makeText(Edit.this, "updated", Toast.LENGTH_SHORT).show();
-
-                    Intent i = new Intent(Edit.this, HomeFragment.class);
+                    Intent i = new Intent(Edit.this, activitydrawer.class);
                     startActivity(i);
                 }
             });

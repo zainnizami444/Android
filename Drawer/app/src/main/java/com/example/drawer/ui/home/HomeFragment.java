@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home,container,false);
         lv = root.findViewById(R.id.lv);
         btn_search = root.findViewById(R.id.btn_search);
-
+        txt_search = root.findViewById(R.id.txt_search);
 
         fetch();
         btn_search.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 search();
             }
-      
+
 
         });
         return root;

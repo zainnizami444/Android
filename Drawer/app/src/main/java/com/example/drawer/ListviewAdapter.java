@@ -61,12 +61,8 @@ public class ListviewAdapter extends BaseAdapter {
             public void onClick(View view) {
 
 
-                Intent i = new Intent(context, delete.class);
-                i.putExtra("uid",data.get(position).getUid());
-                i.putExtra("fname",data.get(position).getFname());
-                i.putExtra("lname", data.get(position).getLname());
-                i.putExtra("email", data.get(position).getEmail());
-
+                db.child(data.get(position).getUid()).removeValue();
+                Intent i = new Intent(context,activitydrawer.class);
                 context.startActivity(i);
             }
         });
@@ -78,6 +74,7 @@ public class ListviewAdapter extends BaseAdapter {
                 i.putExtra("uid",data.get(position).getUid());
                 i.putExtra("fname",data.get(position).getFname());
                 i.putExtra("lname", data.get(position).getLname());
+                i.putExtra("contact", data.get(position).getContact());
                 i.putExtra("email", data.get(position).getEmail());
 
                 context.startActivity(i);
@@ -86,7 +83,7 @@ public class ListviewAdapter extends BaseAdapter {
 
         txtFname.setText(data.get(position).getFname());
         txtLname.setText(data.get(position).getLname());
-
+        txtContact.setText(data.get(position).getContact());
         txtEmail.setText(data.get(position).getEmail());
 
 
