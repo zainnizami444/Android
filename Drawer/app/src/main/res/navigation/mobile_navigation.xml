@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Select">
+
+    <fragment
+        android:id="@+id/nav_Select"
+        android:name="com.example.drawer.ui.home.HomeFragment"
+        android:label="Select"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_Insert"
+        android:name="com.example.drawer.ui.gallery.GalleryFragment"
+        android:label="Insert"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_Update"
+        android:name="com.example.drawer.ui.slideshow.SlideshowFragment"
+        android:label="Update"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+    android:id="@+id/nav_Delete"
+    android:name="com.example.drawer.delete.delete"
+    android:label="Delete"
+    tools:layout="@layout/fragment_delete" />
+</navigation>
